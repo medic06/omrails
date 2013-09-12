@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '4.0.0'
-gem 'rails', github: 'rails/rails', branch: '4-0-stable'
+# gem 'rails', github: 'rails/rails', branch: '4-0-stable'
 
 # Use sqlite3 as the database for Active Record in production else use pg
 group :production do
@@ -14,13 +14,14 @@ group :development, :test do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+# gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+# gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', git: 'git://github.com/rails/coffee-rails.git'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -39,7 +40,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'nokogiri', '1.3.3'
+gem 'nokogiri', '1.6.0'
+
+gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
+gem 'rails', git: 'https://github.com/rails/rails.git', branch: '4-0-stable'
+gem 'devise'
+gem 'ransack'
+gem 'sass-rails', git: 'https://github.com/rails/sass-rails.git'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
