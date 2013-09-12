@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '4.0.0'
 # gem 'rails', github: 'rails/rails', branch: '4-0-stable'
@@ -47,6 +48,7 @@ gem 'rails', git: 'https://github.com/rails/rails.git', branch: '4-0-stable'
 gem 'devise'
 gem 'ransack'
 gem 'sass-rails', git: 'https://github.com/rails/sass-rails.git'
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

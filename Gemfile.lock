@@ -141,6 +141,11 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.1)
+    rails_stdout_logging (0.0.2)
     rake (10.1.0)
     ransack (1.0.0)
       actionpack (>= 3.0)
@@ -192,6 +197,7 @@ DEPENDENCIES
   nokogiri (= 1.6.0)
   pg
   rails!
+  rails_12factor
   ransack
   sass-rails!
   sdoc
